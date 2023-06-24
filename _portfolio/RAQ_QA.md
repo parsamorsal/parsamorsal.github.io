@@ -49,11 +49,11 @@ In this project, the primary objective is to leverage document embeddings to ret
 
 To achieve this, I have outlined the following steps:
 
-## 1. Generate Document Embeddings
+### 1. Generating Document Embeddings
 
 I will utilize the powerful GPT-J-6B embedding model to generate embeddings for each document in our knowledge library. These embeddings capture the semantic meaning and contextual information of the documents.
 
-## 2. Identify Top K Relevant Documents
+### 2. Identifing Top K Relevant Documents
 
 Given a user query, I will follow these steps to identify the top K most relevant documents:
 
@@ -61,7 +61,7 @@ Given a user query, I will follow these steps to identify the top K most relevan
 - Utilizing the SageMaker KNN algorithm, I will search for the top K most relevant documents based on the embedding space. This algorithm allows me to efficiently and accurately retrieve documents that closely match the query.
 - Using the indexes obtained from the KNN algorithm, I will retrieve the corresponding documents.
 
-## 3. Combine Retrieved Documents with Prompt and Question
+### 3. Combining Retrieved Documents with Prompt and Question
 
 To provide a comprehensive input to the LLM, I will merge the retrieved documents with the prompt and question. This consolidated input will be utilized to further analyze and process the information using the LLM. It is crucial to ensure that the combined document and text are of an appropriate size, containing enough information to answer the question while adhering to the maximum sequence length of 1024 tokens required by the LLM.
 
@@ -157,13 +157,13 @@ embeddings_df = build_embedding_table(data_frame, endpoint_name, column_name)
 
 ```
 
-### Indexing the embedding knowledge library using SageMaker KNN algorithm
+## Indexing the embedding knowledge library using SageMaker KNN algorithm
 
-## 1. Training Job for Embedding Indexing
+### 1. Training Job for Embedding Indexing
 
 I start the KNN by initiating a training job that creates an index for the embedding knowledge data. To accomplish this, I employ the powerful [Faiss](https://github.com/facebookresearch/faiss) algorithm, which efficiently indexes the data for similarity search.
 
-## 2. Endpoint for Nearest Document Retrieval
+### 2. Endpoint for Nearest Document Retrieval
 
 Once the indexing is complete, I create the endpoint. This endpoint handles the task of accepting query embeddings and promptly returning the top K nearest indexes of the relevant documents. 
 
@@ -268,7 +268,7 @@ knn_predictor = predictor_from_estimator(knn_estimator, instance_type, endpoint_
 
 ```
 
-### 4.4 Retrieve the most relevant documents
+## Retrieving the most relevant documents
 
 Given the embedding of a query, the endpoint is queried to obtain the indexes of the top K most relevant documents. These indexes will then be used to retrieve the corresponding textual documents.
 
