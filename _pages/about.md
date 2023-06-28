@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am Parsa Morsal, a Machine Learning Engineer and Data Scientist with a Master's degree in Software Engineering and a Bachelor's degree in Computer Engineering. Over the past five years, I have gained valuable professional experience in the fields of Natural Language Processing (NLP), Computer Vision (CV) and Data Science working on a variety of high-impact production-level projects.
+I am Parsa Morsal, a Machine Learning Engineer and Data Scientist with a Master's degree in Software Engineering and a Bachelor's degree in Computer Engineering. Over the past six years, I have gained valuable professional experience in the fields of Natural Language Processing (NLP), Computer Vision (CV) and Data Science working on a variety of high-impact production-level projects.
 
 As an ML Engineer and Data Scientist, I have designed, implemented and deployed supervised and unsupervised machine learning models and customized solutions, while coordinating and analyzing business requirements. 
 
