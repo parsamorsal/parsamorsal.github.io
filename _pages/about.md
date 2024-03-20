@@ -25,3 +25,12 @@ During my 6+ years of combined industrial and academic experience, I have worked
  - Python, Java, C/C++
  - Tensorflow, PyTorch, SQL
  - Git, Docker, DataDog, Agile Methodologies, Jira
+
+
+
+
+
+
+ {% raw %}
+<script data-goatcounter="https://parsamo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+{% endraw %}
